@@ -1,0 +1,13 @@
+
+public class ArraysTests {
+
+	public static void printArrayReverse(int ar[]){
+		for(i=ar.length; i>0; i--){
+			System.out.print(ar[i] + " ");
+		}
+	System.out.println();
+	}
+	
+	
+	
+}
