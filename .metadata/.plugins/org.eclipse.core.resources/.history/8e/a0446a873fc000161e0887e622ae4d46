@@ -1,0 +1,18 @@
+
+public class TestBooks {
+
+	public static void main(String[] args) {
+		Books b1 = new Books();
+		b1.setAuthor("Dale Carnegie");
+		b1.setTitle("HOW TO WIN FRIENDS AND INFLUENCE PEOPLE");
+		b1.setPages(500);
+		b1.setISBN(456123456);
+
+		Books b2 = new Books();
+		b2.setAuthor("Peter Drucker");
+		b2.setTitle("MANAGEMENT: TASKS, RESPONSIBILITIES, PRACTICES");
+		b2.setPages(800);
+		b2.setISBN(987456321);
+	}
+
+}

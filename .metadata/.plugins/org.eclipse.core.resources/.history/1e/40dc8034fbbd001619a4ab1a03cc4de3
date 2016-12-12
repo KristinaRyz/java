@@ -1,0 +1,68 @@
+
+public class ArraysTests {
+
+	public static void printArrayReverse(int ar[]){
+	for (int i = ar.length-1; i >=0; i--) {
+		System.out.print(ar[i] + " ");
+	}
+		System.out.println();
+	}
+
+	public static int arrayEvensSum(int ar[]){
+		int	sum = 0;
+		for(int i = 0; i<ar.length; i++){
+			if(ar[i] % 2 == 0){
+				sum += ar[i];
+			}
+			
+		}
+		return sum;
+		
+	}
+
+	public static int searchMaxInd(int ar[]) {
+		
+		int max = ar[0], maxInd = 0;
+		for(int i = 0; i<ar.length; i++){
+			if(ar[i]> max){
+				max = ar[i];
+				maxInd = i;
+			}
+		}
+		return maxInd;
+
+	}
+	
+	public static int[] sortBubble(int ar[]){
+		int temp;
+		for(int i=0; i<ar.length; i++){
+			for(int j=0; j<ar.length; j++){	
+			if(ar[j]>ar[j+1]){
+				temp = ar[j];
+				ar[j] = ar[j+1];
+				ar[j+1] = temp;
+			  }
+			}
+		}
+		return ar;
+	}
+	
+
+	
+	public static boolean maxToEnd(int ar[]){
+		int temp;
+		boolean j = true;
+		for(int i=0; i<ar.length - 1; i++){
+			if(ar[i]>ar[i+1]){
+				temp = ar[i];
+				ar[i] = ar[i+1];
+				ar[i+1] = temp;
+				j = false;
+			}
+		}
+		return j;
+	}
+
+
+}
+
