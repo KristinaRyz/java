@@ -1,0 +1,66 @@
+
+public class hw2 {
+
+	public static void main(String[] args) {
+		         
+		        int [] arr = {-1,2,0,13,-9,10};
+		        printArray (arr);
+		        searchMinIndex(arr);
+		        revers (arr);
+		        searchMinIndex(arr);
+		        bubblesort(arr);
+		        System.out.println("Bubblesort:");
+		        printArray (arr);
+		         
+		    }
+		     
+		    private static void bubblesort(int[] arr) {
+		        while (maxToEnd(arr));
+		             
+		    }
+		 
+		    private static boolean maxToEnd(int[] arr) {
+		        int counter=0;
+		        for (int i=0,j=1; i<arr.length-1;i++,j++){
+		            if (arr[i]>arr[j]){
+		                swap(i,j,arr);
+		                counter++;
+		            }
+		        }
+		        return counter!=0? true:false;
+		    }
+		 
+		    private static void searchMinIndex(int[] arr) {
+		        int index = 0;
+		        for (int i= 1; i<arr.length; i++){
+		            if (arr[i]<arr[index]) index = i;
+		        }
+		        System.out.println("index of Min = "+index);
+		    }
+		 
+		    public static void revers (int [] arr){
+		        for (int i =0, j=1 ; i<arr.length/2; i++,j++){
+		            swap (i,arr.length-j, arr);
+		        }
+		        System.out.println("Revers:\t");
+		        printArray (arr);
+		    }
+		 
+		    private static void swap(int i, int j, int [] arr) {
+		        int temp = arr[i];
+		        arr[i]=arr[j];
+		        arr[j]=temp;
+		         
+		    }
+		     
+		    private static void printArray(int[] arr) {
+		        for (int i=0; i<arr.length; i++){
+		            System.out.print("arr["+i+"]="+arr[i]+"\t");
+		        }
+		        System.out.println();       
+		    }
+		 
+		}
+	}
+
+}
