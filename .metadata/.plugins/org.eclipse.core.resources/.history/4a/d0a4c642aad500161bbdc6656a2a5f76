@@ -7,7 +7,7 @@ public class AnimalTest {
 		Animal an1 = new Animal(); // ssilka an1 type Animal smotrit na age = 0, name = null, kind = null;
 //an1.age = -12;//vozmognost napryamyu dobratsya
 //an1.name = null;
-//nujna inkapsulyaciya, vozvrat i piwem private vsem properties
+//nujna inkapsulyaciya, vozvrat i piwem private
 
 an1.setAge(9);
 an1.setName("Tiger");
