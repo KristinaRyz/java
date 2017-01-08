@@ -8,6 +8,9 @@
 <fullyQualifiedTypeName name="BasePizza"/>
 <fullyQualifiedTypeName name="Diabola"/>
 <fullyQualifiedTypeName name="Movie"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="Clothes"/>
+<fullyQualifiedTypeName name="ChildClothes"/>
+<fullyQualifiedTypeName name="AdaultClotes"/>
 </qualifiedTypeNameHistroy>
