@@ -13,4 +13,8 @@
 <fullyQualifiedTypeName name="Clothes"/>
 <fullyQualifiedTypeName name="ChildClothes"/>
 <fullyQualifiedTypeName name="AdaultClotes"/>
+<fullyQualifiedTypeName name="java.lang.Process"/>
+<fullyQualifiedTypeName name="ProfBook"/>
+<fullyQualifiedTypeName name="BestSeller"/>
+<fullyQualifiedTypeName name="EducBook"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,30 @@
+
+public class EducBook extends Book {
+	private int grant;
+
+
+
+	public EducBook() {
+		super();
+	}
+
+	public EducBook(int isbn, String title, String author, int basePrice, int grant) {
+		super(isbn, title, author, basePrice);
+		this.grant = grant;
+	}
+
+	public int getGrant() {
+		return grant;
+	}
+
+	public void setGrant(int grant) {
+		this.grant = grant;
+	}
+
+	@Override
+	public double calculatePrice() {
+
+		return 0;
+	}
+
+}

@@ -1,0 +1,10 @@
+
+public class EducBook extends Book {
+
+	@Override
+	public double calculatePrice() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,5 @@
+
+public class BestSeller extends Book{
+private int addPrice;
+
+}
