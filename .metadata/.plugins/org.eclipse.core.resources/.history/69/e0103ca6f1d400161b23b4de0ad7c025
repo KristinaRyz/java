@@ -1,8 +1,0 @@
-
-public class Clothes {
-
-	private int size;
-	private String color;
-	private String brand;
-	
-}

@@ -17,4 +17,8 @@
 <fullyQualifiedTypeName name="ProfBook"/>
 <fullyQualifiedTypeName name="BestSeller"/>
 <fullyQualifiedTypeName name="EducBook"/>
+<fullyQualifiedTypeName name="WebSite"/>
+<fullyQualifiedTypeName name="Magazine"/>
+<fullyQualifiedTypeName name="java.lang.Readable"/>
+<fullyQualifiedTypeName name="TestReadable"/>
 </qualifiedTypeNameHistroy>

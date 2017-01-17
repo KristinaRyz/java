@@ -1,9 +1,0 @@
-
-public class AdaultClotes extends Clothes{
-private String genders(){
-	
-	public AdaultClotes(int size, String color, String brand, int age, String genders){
-		this.set
-	}
-}
-}
