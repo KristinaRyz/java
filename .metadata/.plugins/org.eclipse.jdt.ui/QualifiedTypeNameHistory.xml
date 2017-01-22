@@ -21,4 +21,5 @@
 <fullyQualifiedTypeName name="Magazine"/>
 <fullyQualifiedTypeName name="java.lang.Readable"/>
 <fullyQualifiedTypeName name="TestReadable"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>

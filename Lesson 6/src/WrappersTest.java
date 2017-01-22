@@ -14,7 +14,7 @@ public class WrappersTest {//obertka
 		Boolean boolw = new Boolean(true);
 		Character cw = new Character('W');
 		Integer iwl = 9;//autoboxing
-		int a = iw.intValue(); // unboxing
+		int a = iwl; // unboxing
 		System.out.println(a);
 		a = iwl;//autounboxing
 

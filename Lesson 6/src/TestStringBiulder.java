@@ -7,7 +7,10 @@ public class TestStringBiulder {
 		System.out.println(str);
 		str.delete(3, 6);
 		System.out.println(str);
-
+String test= "dfghhjkl";
+System.out.println(test);
+test.substring(1,4);
+System.out.println(test);
 
 	}
 
