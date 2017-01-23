@@ -6,10 +6,8 @@ public class TestString {
 //                               0 1 2 3 4 
 		String str = new String("H e l l o"); //operator new
 String str1 = "Bye"; // constanta
-
 char sym = str.charAt(1);
 System.out.println(sym);
-
 for(int i = 0; i<str.length();i++){
 	System.out.println(str.charAt(i));
 }
@@ -45,4 +43,5 @@ return true;
 	
 
 }
-}
+	}
+

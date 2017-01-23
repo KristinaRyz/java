@@ -1,0 +1,21 @@
+
+public class MyString {
+
+	public static void main(String[] args) {
+
+		String ch = new String ("abs");
+		char sym = ch.charAt(1);
+		System.out.println(sym);
+
+
+
+		char chn;
+		chn = "abc".charAt(1);
+		System.out.println(chn);
+		
+		String str = new String("H e l l o"); 
+		String str2 = str.substring(2);
+		System.out.println(str2); 
+	}
+
+}
