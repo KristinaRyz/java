@@ -27,4 +27,8 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javax.swing.plaf.metal.MetalIconFactory.FolderIcon16"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="dao.Car"/>
+<fullyQualifiedTypeName name="dao.Person"/>
+<fullyQualifiedTypeName name="model.ObjectArray"/>
 </qualifiedTypeNameHistroy>
