@@ -1,5 +1,7 @@
 package model;
 
+import javax.swing.text.StyledEditorKit.ForegroundAction;
+
 public class ObjectArray {
 	private static final int DEFAULT_CAPACITY = 10; // 10 i 16
 	//       deistvitelnoi
@@ -54,10 +56,20 @@ public class ObjectArray {
 	
 	public Object get(int index){
 		if(index<0 || index>=size)return null;
-		return arr[index];}
+		return arr[index];
+		}
+	
+	
+	
+	
 	public Object removeLast(){
-		return isEmpty() ? null : arr[(size--)-1];//тернарный оператор
+//		return isEmpty() ? null : arr[(size--)-1];//тернарный оператор
+		if(isEmpty())return null;
+		Object removed = arr[size-1];
+		size--;
+		return removed;
 	}
+		
 	public boolean isEmpty(){return size ==0;}
 
 	public Object removeFirst(){
@@ -67,17 +79,70 @@ public class ObjectArray {
 		size--;
 		return removed;
 	}
-	/* Домашнее задание
-	 * 1 public Object remove(int index){
-	 * 			return index;}		
-		2 *переписать for(int i=0; i<size-1; i++)
-		3 public boolean addTOIndex(Object obj, int index){}
-		4 ** public void merge(ObjectArray oa){}соединить два объектаж 
-	 */
+
 	public void addToHead(Object obj){
 		if(size == capacity)enlargeArray();
 		for(int i = size; i>0; i--)arr[i] = arr[i-1];
 		arr[0] = obj;
 		size++;
 	}
+	
+	public Object remove(int j){
+		if(isEmpty())return null;
+		Object removed =arr[j];
+		for(int i=j; i<size-1; i++){
+			arr[i] = arr[i+1];}	
+		arr[size-1] = 0;
+		size--;
+	return removed;
+	}
+	
+	
+	
+public boolean addToIndex(Object obj, int i){
+	if(isEmpty()){return false;}
+	if(size == capacity){enlargeArray();}
+	if(i<0){addToHead(obj); return true;}
+	if(i>=size){add(obj);return true;}
+	
+	for (int j=size-1; j > i; j--) 
+		arr[j+1] = arr[j];
+		arr[i] = obj;
+    	size++;
+		return true;		
 }
+
+
+	//
+	/*public Object removeFirst(){
+		if(isEmpty())return null;
+		Object removed = arr[0];
+		int s1 = size-1; // !!!!!!!!!!!!!!
+		//for(int i=0; i<size-1; i++)arr[i] = arr[i+1]; ili kak stro4ka vnizu
+		for(int i=1; i<size; i++)arr[i-1] = arr[i];
+		size--;
+		return removed;
+	}*/
+	
+	public void mergeTail(ObjectArray oa){
+		for (int i = 0; i < oa.size; i++) add(oa.get(i));
+	}
+	
+	public void mergeHead(ObjectArray oa){
+//	for (int i = oa.size-1; i >=0; i--)addToHead(oa.get(i));
+	//
+	ObjectArray buffer = new ObjectArray(size+oa.size);
+		for (int i = 0; i < oa.size; i++)buffer.add(oa.get(i));
+		for (int i = 0; i < size; i++)buffer.add(get(i));
+		arr = buffer.arr;
+		size = buffer.size;
+		capacity = buffer.capacity;
+		
+//	ObjectArray memory = oa;
+//	for (int i = 0; i <size; i++)oa.add(get(i));//sebya prisvoit k prihodyawemu
+//	arr = oa.arr;
+//	size = oa.size;
+//	capacity = oa.capacity;
+//	oa = memory;
+
+}}
