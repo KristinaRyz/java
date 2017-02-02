@@ -1,3 +1,5 @@
+import javax.sound.midi.Synthesizer;
+
 public class Test {
 
 	public static void main(String[] args) {
@@ -30,10 +32,13 @@ public class Test {
 		System.out.println(Kolkhoz.zakroma);
 		
 			
-		}
-			
-		
+		Person p2 = new Person("Victor", 45);
+		System.out.println(p2);
 	
+	Employee emp = new Employee("Masha", 22, 15000);
+   System.out.println(emp);
+	}
+
 	}
 	
 	
