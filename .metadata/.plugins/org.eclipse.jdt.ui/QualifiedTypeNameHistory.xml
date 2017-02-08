@@ -31,4 +31,10 @@
 <fullyQualifiedTypeName name="dao.Car"/>
 <fullyQualifiedTypeName name="dao.Person"/>
 <fullyQualifiedTypeName name="model.ObjectArray"/>
+<fullyQualifiedTypeName name="Car"/>
+<fullyQualifiedTypeName name="javax.sound.midi.Synthesizer"/>
+<fullyQualifiedTypeName name="Person"/>
+<fullyQualifiedTypeName name="Employee"/>
+<fullyQualifiedTypeName name="Track"/>
+<fullyQualifiedTypeName name="Bus"/>
 </qualifiedTypeNameHistroy>

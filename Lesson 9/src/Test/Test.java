@@ -56,24 +56,24 @@ public class Test {
 		
 		
 //		//
-//		ObjectArray oa1 = new ObjectArray();
-//		oa1.add(38);
-//		oa1.add(new Car("Volga", 1964, "black", true));
-//		oa1.add("Masha");
-//		oa1.add(new Person("Vasya", 28, true));
-//		
-//		ObjectArray oa2 = new ObjectArray();
-//		oa2.add(83);
-//		oa2.add(new Car("Ford", 1964, "black", true));
-//		oa2.add("Glasha");
-//		oa2.add(new Person("Petya", 78, true));
-//		
-////		System.out.println("-----Tail------");
-////		oa1.mergeTail(oa2);
-////		oa1.display();
-//		System.out.println("-----Head------");
-//		oa1.mergeHead(oa2);
+		ObjectArray oa1 = new ObjectArray();
+		oa1.add(38);
+		oa1.add(new Car("Volga", 1964, "black", true));
+		oa1.add("Masha");
+		oa1.add(new Person("Vasya", 28, true));
+		
+		ObjectArray oa2 = new ObjectArray();
+		oa2.add(83);
+		oa2.add(new Car("Ford", 1964, "black", true));
+		oa2.add("Glasha");
+		oa2.add(new Person("Petya", 78, true));
+		
+//		System.out.println("-----Tail------");
+//		oa1.mergeTail(oa2);
 //		oa1.display();
+		System.out.println("-----Head------");
+		oa1.mergeHead(oa2);
+		oa1.display();
 		
 		
 		Employee e= new Employee("Vasya", 33, true, 12000);

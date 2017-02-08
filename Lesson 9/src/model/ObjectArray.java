@@ -129,14 +129,14 @@ public boolean addToIndex(Object obj, int i){
 	}
 	
 	public void mergeHead(ObjectArray oa){
-//	for (int i = oa.size-1; i >=0; i--)addToHead(oa.get(i));
-	//
-	ObjectArray buffer = new ObjectArray(size+oa.size);
-		for (int i = 0; i < oa.size; i++)buffer.add(oa.get(i));
-		for (int i = 0; i < size; i++)buffer.add(get(i));
-		arr = buffer.arr;
-		size = buffer.size;
-		capacity = buffer.capacity;
+	for (int i = oa.size-1; i >=0; i--)addToHead(oa.get(i));
+	
+//	ObjectArray buffer = new ObjectArray(size+oa.size);
+//		for (int i = 0; i < oa.size; i++)buffer.add(oa.get(i));
+//		for (int i = 0; i < size; i++)buffer.add(get(i));
+//		arr = buffer.arr;
+//		size = buffer.size;
+//		capacity = buffer.capacity;
 		
 //	ObjectArray memory = oa;
 //	for (int i = 0; i <size; i++)oa.add(get(i));//sebya prisvoit k prihodyawemu

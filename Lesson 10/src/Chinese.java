@@ -2,6 +2,7 @@
 public class Chinese {
 //private static String name = "Lee";
 	private String name = "Lee";
+	
 public void setName(String name){
 	this.name = name;
 }
