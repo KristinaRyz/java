@@ -93,36 +93,35 @@ public class LinkedListInt {//ssilka na head i na tail, skolko yacheek vsego on 
 	}
 
 	public int findIntIndex (int index){
-		Node curr = head;
-		head = curr.getNext();
-		if (head == null) {//+
-			return -1;
-		}
-		if(index>=size){//+
+		if (head == null) {
+			return -1;}
+		if(index>=size-1){
 			return tail.getValue();}
 		if(index <= 0){
 			return head.getValue();}
+		Node curr = head;
 		while(index > 0){
 			curr = curr.getNext();
 			index--;}
 		return curr.getValue();
-
 	}
+	
  public void addAfter(int index, int value){
 	 Node node = new Node(value);
 		if(head == null){// net elementov
-			head = node;
-			tail = node;}
-		if(index<0){addIntToHead(value);}
-		if(index>=size){addInt(value);}
+			return;}
+		if(index<0){addIntToHead(value);return;}
+		if(index>=size-1){addInt(value);return;}
 		Node curr = head;
-		head = curr.getNext();
 		while(index>0){
-			curr = curr.setNext(next);
-			
+			curr = curr.getNext();
+			index--;
 		}
+		node.setNext(curr.getNext());
+		curr.setNext(node);
 		size++;
 	}
+
 
 
 	//		 public boolean removeValByInd(int ind) {

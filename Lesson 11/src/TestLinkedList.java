@@ -37,10 +37,16 @@ list.addInt(9);
 list.addInt(2);
 System.out.println("---Find index---");
 System.out.println("Size = " + list.getSize());
-int value = list.findIntIndex(10);
+int value = list.findIntIndex(4);
 list.displayList();
 System.out.println("In index " + value);
-
+System.out.println();
+list.displayList();
+list.addAfter(2, 145);
+int index2 = 2;
+int value1 = 145;
+System.out.println("After index = " + index2 + " " + "set value = " + value1);
+list.displayList();
 
 
 
