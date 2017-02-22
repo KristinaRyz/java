@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+
+public class Garage {
+
+	private String name;
+	private String address;
+	private ArrayList<Car> park = new ArrayList<Car>();
+	
+	
+	public Garage(String name, String address) {
+		super();
+		this.name = name;
+		this.address = address;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	public void displayGarage(){
+		System.out.println("Garage name : " + name);
+		System.out.println("Adress : " + address);
+		System.out.println("Car count : " + park.size());
+	}
+	
+	public void addCar (Car c){
+		park.add(c);
+	}
+	
+	public int carCount (){
+		return park.size();
+	}
+	
+	
+}

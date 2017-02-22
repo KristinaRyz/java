@@ -7,6 +7,7 @@ import telran.liststest.testclasses.Person;
 public class TestArrayList {
 
 	public static void main(String[] args) {
+
 		ArrayList list = new ArrayList();
 		String str ="Hello";
 		String str1 =new String ("Bye");
@@ -30,28 +31,40 @@ public class TestArrayList {
 		list.add(p1);
 		list.add(c1);
 
-		for(int i = 0; i< list.size(); i++){
-			System.out.println(list.get(i));//pechataet vse elementi v cikle po index
+		for(int i = 0; i< list.size(); i++){//pechataet vse elementi v cikle po index
+			System.out.println(list.get(i));
 		}
+		System.out.println();// print toString
+		System.out.println(list.toString()); 
 
-		System.out.println(list.toString());
+		System.out.println("=====Remove by index====");
 		list.remove(5);
 		System.out.println(list.toString());
-		int i = list.indexOf(c1);
+		System.out.println();
+		System.out.println("====Find index====");
+		int i = list.indexOf(c1);// poisk indexa po elementu
 		System.out.println("in index:" + i);
+		System.out.println();
+		System.out.println("====Remove element====");
 		list.remove(b1);
 		System.out.println(list.toString());
+		System.out.println();
+		System.out.println("========Remove all========");
 		//		list.clear();
+		System.out.println();
+		System.out.println("====Contains element=====");
 		System.out.println(list.contains(i1));
-		//System.out.println(list.toString());
+		System.out.println(list.toString());
 
+		System.out.println();
+		System.out.println("===Print list <String> generics ====");
 		ArrayList<String> listStrings = new ArrayList<String>();// generics
 		listStrings.add(str2);
-		
-		
-		
+		System.out.println(listStrings.toString());
+
+
 	}
 
-	
-	
+
+
 }

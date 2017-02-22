@@ -1,0 +1,8 @@
+
+public class Garage {
+
+	private String name;
+	private String address;
+	
+	
+}

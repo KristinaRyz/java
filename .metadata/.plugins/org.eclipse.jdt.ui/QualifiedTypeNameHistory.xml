@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="Diabola"/>
 <fullyQualifiedTypeName name="Movie"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="Clothes"/>
 <fullyQualifiedTypeName name="ChildClothes"/>
 <fullyQualifiedTypeName name="AdaultClotes"/>
@@ -24,17 +23,21 @@
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="MyIntArray"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javax.swing.plaf.metal.MetalIconFactory.FolderIcon16"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="dao.Car"/>
 <fullyQualifiedTypeName name="dao.Person"/>
 <fullyQualifiedTypeName name="model.ObjectArray"/>
-<fullyQualifiedTypeName name="Car"/>
 <fullyQualifiedTypeName name="javax.sound.midi.Synthesizer"/>
 <fullyQualifiedTypeName name="Person"/>
 <fullyQualifiedTypeName name="Employee"/>
 <fullyQualifiedTypeName name="Track"/>
 <fullyQualifiedTypeName name="Bus"/>
+<fullyQualifiedTypeName name="Car"/>
+<fullyQualifiedTypeName name="Garage"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="Student"/>
+<fullyQualifiedTypeName name="Subject"/>
 </qualifiedTypeNameHistroy>
