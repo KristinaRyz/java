@@ -3,9 +3,9 @@ import java.util.*;
 public class Minimarket {
 	private String name;
 	private String address;
-//	private HashSet<Product> stock = new HashSet<Product>(); po hashcodu sortiruet
-//	private LinkedHashSet<Product> stock = new LinkedHashSet<Product>(); tot poraydok v kotom dobavlayli
-	private TreeSet<Product> stock = new TreeSet<Product>();// sortiruet po kriteriy
+//	private HashSet<Product> stock = new HashSet<Product>();
+//	private LinkedHashSet<Product> stock = new LinkedHashSet<Product>();
+	private TreeSet<Product> stock = new TreeSet<Product>();
 	public Minimarket(String name, String address) {
 		super();
 		this.name = name;
