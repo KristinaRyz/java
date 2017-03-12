@@ -40,4 +40,6 @@
 <fullyQualifiedTypeName name="Student"/>
 <fullyQualifiedTypeName name="Subject"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="Book"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
 </qualifiedTypeNameHistroy>
