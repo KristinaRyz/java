@@ -1,0 +1,18 @@
+
+public class ErrorTest {
+public static void main(String[] args) {
+	int size = Integer.MAX_VALUE;
+	while(true){
+	try{
+	byte [] ar = new byte[size];//novii array s razmerom Max_Value
+	break;
+	}
+	catch(Error e){
+		System.out.println("Error : " + e.getMessage());
+		size = size - Integer.MAX_VALUE/4;// binary delete
+	}
+	}
+//	System.out.println("End of program");
+System.out.println("Size = " + size);
+}
+}
