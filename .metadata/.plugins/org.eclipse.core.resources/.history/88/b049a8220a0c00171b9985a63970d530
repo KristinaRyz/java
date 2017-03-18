@@ -1,0 +1,36 @@
+
+public class ArrayException {
+
+	public static void main(String[] args) {
+		int[] ar = {4,7,9,8,6,2,3,1,5};
+		int indexFrom = 0;
+		int indexTo = 5;
+		
+		try{
+		printSubArray(ar, indexFrom, indexTo);
+		}
+		catch(ArrayIndexOutOfBoundsException e){
+			System.out.println("ArrayIndexOutOfBoundsException" + e.getMessage());
+			indexFrom = 0;
+		}
+	
+		
+	}
+
+	
+	
+	public static void printSubArray(int[] ar, int from, int to) throws NullPointerException, ArrayIndexOutOfBoundsException {
+		if(ar== null || ar.length == 0){
+			throw new NullPointerException("Array is NULL");
+		}
+//			if(from>to){
+//				throw new ArrayIndexOutOfBoundsException("Error indexFrom>indexTo");
+//			}
+			if(from > to || from < 0){
+				throw new ArrayIndexOutOfBoundsException("Error indexFrom");
+			}
+			if(to> ar.length){
+				throw new ArrayIndexOutOfBoundsException("Error indexTo");
+			}
+	}
+}
