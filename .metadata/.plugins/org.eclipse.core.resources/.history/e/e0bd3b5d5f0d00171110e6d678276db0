@@ -1,0 +1,18 @@
+import java.io.File;
+
+public class CreateFolderAndFile {
+
+	public static void main(String[] args) {
+String folderName = "folder ";
+String disk = "C:\\DISK";
+String fileName = "file ";
+String fileExt = ".txt";
+
+File f= null;
+String path = disk + folderName + 1;
+f = new File(path);
+f.mkdirs();
+
+	}
+
+}

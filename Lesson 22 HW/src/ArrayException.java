@@ -4,8 +4,8 @@ public class ArrayException {
 	public static void main(String[] args) {
 //                  0 1 2 3 4 5 6 7 8
 		int[] ar = {4,7,9,8,6,2,3,1,5};
-		int indexFrom = 0;
-		int indexTo = 5;
+		int indexFrom =0;
+		int indexTo = 9;
 
 		try{
 			printSubArray(ar, indexFrom, indexTo);
