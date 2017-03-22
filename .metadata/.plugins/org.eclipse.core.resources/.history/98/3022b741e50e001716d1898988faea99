@@ -18,7 +18,6 @@ public class CreateFolderAndFile {
 				String path = disk + "\\" + folderName + i;
 				f1 = new File(path);
 				f1.mkdirs();
-
 				//////////////////////Create file in folder////////////////
 				String aPath = f1.getAbsolutePath() + "\\" + fileName + i + fileExt;
 				f2 = new File(aPath);
