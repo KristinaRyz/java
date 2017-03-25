@@ -1,0 +1,92 @@
+import java.io.*;
+import java.util.*;
+import java.util.Map.Entry;
+import inputoutput.testcar.Car;
+
+public class TestInput {
+
+	public static void main(String[] args) throws IOException {
+		HashMap<Car,Integer> garage = new HashMap<Car,Integer>();
+
+		InputStreamReader is = new InputStreamReader(System.in);//vvod v console//ssilka v console
+		BufferedReader br = new BufferedReader(is);//polu4aet info iz Stream
+
+		String model, yearStr, idStr, answer;
+		while(true){
+
+			System.out.println("Please enter the model of car : ");
+			try{
+				model = br.readLine();
+
+				System.out.println("Please enter the year of car : ");
+				yearStr = br.readLine();
+				System.out.println("Please enter the id of car : ");
+				idStr = br.readLine();
+				int id=0;
+
+				int year = 0;
+				try{
+				 id = Integer.parseInt(idStr);
+				}catch(NumberFormatException e){
+					System.out.println("Wrong id format \nid set to 0");
+				}
+				try{
+					year = Integer.parseInt(yearStr);
+				}catch(NumberFormatException e){
+					System.out.println("Wrong year format \nyear set to 0");
+				}
+
+
+				addCar(new Car(model, year, id),garage);
+
+				System.out.println("Do you want continue? yes or no? ");
+				answer = br.readLine();//4itaem 4to napiwet user
+				if(answer.equalsIgnoreCase("no")){
+					TestInput.writeToFile(garage);
+					break;
+				}
+			}
+			catch (IOException e) {
+				System.out.println(e.getMessage());
+			}
+			System.out.println(garage);
+		}
+
+	}
+	public static void addCar(Car c,HashMap<Car,Integer> garage){
+		Set<Car> cars = garage.keySet();//vitawili set cars
+		for(Car cr : cars){//po kagdoi car
+			if(cr.equals(c)){//sravnivau
+				int q = garage.get(cr);//kol-vo knig v stock
+				q++;
+				garage.replace(cr, q);
+				return;
+			}
+		}
+		garage.put(c, 1);
+	}
+	public static void writeToFile(HashMap<Car,Integer> garage) throws IOException{
+		File folder = new File("C:\\DISK\\garage");
+		if(folder.exists() == false)
+			folder.mkdirs();
+
+		String filePath = folder.getAbsolutePath() + "\\" + "garage.txt";
+		File file = new File(filePath);
+		if(file.exists() == false)
+			file.createNewFile();
+		FileWriter fw = new FileWriter(file);//filePath
+		BufferedWriter bw = new BufferedWriter(fw);
+
+
+		Set<Entry<Car,Integer>> entries = garage.entrySet();//set objectov for Iterator
+		for(Entry<Car,Integer> e: entries){//delat import java.util.Map//vidai set v kotorom object s 2 polyami(key,value)
+			System.out.print("Model :" + e.getKey());
+			System.out.println("\t Quantity : " + e.getValue());
+			bw.write("Model :" + e.getKey());
+			bw.write("\t Quantity : " + e.getValue());
+		}
+
+		bw.close();
+	}
+
+}

@@ -1,0 +1,38 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
+
+import inputoutput.testcar.Car;
+
+public class TestInput {
+
+	public static void main(String[] args) throws IOException {
+		HashMap<Car,Integer> garage = new HashMap<Car,Integer>();
+
+		InputStreamReader is = new InputStreamReader(System.in);//vvod v console//ssilka v console
+		BufferedReader br = new BufferedReader(is);//polu4aet info iz Stream
+
+		String model, year, idStr, answer;
+		while(true){
+			System.out.println("Please enter the model of car : ");
+			model = br.readLine();
+			System.out.println("Please enter the year of car : ");
+			year = br.readLine();
+			System.out.println("Please enter the id of car : ");
+			idStr = br.readLine();
+			
+			int id = Integer.parseInt(idStr);
+			Car c = new Car(model, year, id);
+			garage.add(c);
+			
+			System.out.println("Do you want continue? yes or no? ");
+			answer = br.readLine();//4itaem 4to napiwet user
+			if(answer.equalsIgnoreCase("no")){
+				TestInput.writeToFile(course);
+				break;
+			}
+		}
+	}
+
+}

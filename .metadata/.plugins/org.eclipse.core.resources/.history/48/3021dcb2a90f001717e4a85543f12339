@@ -1,0 +1,10 @@
+import java.util.*;
+
+public class TestInput {
+
+	public static void main(String[] args) {
+HashMap<Car,Integer> garage = new HashMap<Car,Integer>();
+
+	}
+
+}
