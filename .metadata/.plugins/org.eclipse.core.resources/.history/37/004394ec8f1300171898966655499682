@@ -1,0 +1,54 @@
+package myminimarket.minimarket;
+import java.util.*;
+import myminimarket.product.Product;
+public class Minimarket {
+	private String name;
+	private String adress;
+	private TreeMap<Product, Integer> stock = new TreeMap<Product,Integer>();
+
+	public Minimarket(String name, String adress) {
+		super();
+		this.name = name;
+		this.adress = adress;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAdress() {
+		return adress;
+	}
+
+	public void setAdress(String adress) {
+		this.adress = adress;
+	}
+
+	public void addProduct(Product pr, int quantity){
+		Set<Product> keys = stock.keySet();
+		for(Product p: keys){
+			if(p.equals(pr)){
+				int q = stock.get(p);
+				q+=quantity;
+				stock.replace(p, q);
+				return;
+			}
+		}
+		stock.put(pr, quantity);
+	}
+
+	public void display(){
+		System.out.println("Name : " + name);
+		System.out.println("Adress : " + adress);
+		System.out.println("============");
+		Set<Product> keys = stock.keySet();
+		for(Product p : keys){
+			System.out.println(p + " -> " + stock.get(p));
+		}
+	}
+//product remove
+}

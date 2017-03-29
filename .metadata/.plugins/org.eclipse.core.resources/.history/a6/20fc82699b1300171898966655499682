@@ -1,0 +1,26 @@
+package myminimarket.minimarket;
+
+import myminimarket.product.MilkProduct;
+
+public class MinimarketTest {
+
+	public static void main(String[] args) {
+Minimarket mk = new Minimarket("TivTaam", "Jabotynski 68");
+
+MilkProduct mp1 = new MilkProduct("Milk", 10, 3456, "1 litr", "29.03.17", true, 0.5);
+MilkProduct mp2 = new MilkProduct("Milk", 8, 34668, "1 litr", "29.03.17", true, 2.3);
+MilkProduct mp3 = new MilkProduct("Milk", 12, 3476, "1 litr", "29.03.17", true, 3);
+MilkProduct mp4 = new MilkProduct("Milk", 15, 3486, "1 litr", "29.03.17", true, 1.5);
+MilkProduct mp5 = new MilkProduct("Milk", 5, 3496, "1 litr", "29.03.17", true, 1);
+
+mk.addProduct(mp1, 5);
+mk.addProduct(mp2, 2);
+mk.addProduct(mp3, 7);
+mk.addProduct(mp4, 1);
+mk.addProduct(mp5, 9);
+
+mk.display();
+
+	}
+
+}

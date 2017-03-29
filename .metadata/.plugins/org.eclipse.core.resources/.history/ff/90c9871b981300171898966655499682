@@ -1,0 +1,5 @@
+package myminimarket.product;
+
+public class AlcoholProduct extends Food {
+
+}

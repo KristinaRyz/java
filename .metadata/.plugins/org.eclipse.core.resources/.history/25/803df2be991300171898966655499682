@@ -1,0 +1,13 @@
+package myminimarket.minimarket;
+
+import myminimarket.product.MilkProduct;
+
+public class MinimarketTest {
+
+	public static void main(String[] args) {
+Minimarket mk = new Minimarket("TivTaam", "Jabotynski 68");
+MilkProduct mp1 = new MilkProduct("Milk", 10, 3456, "1 litr", "29.03.17", true, 0.5);
+
+	}
+
+}

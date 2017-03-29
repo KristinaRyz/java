@@ -1,0 +1,56 @@
+package myminimarket.product;
+
+public abstract class Product implements Comparable<Product> {
+	private String name;
+	private double price;
+	private int code;
+	private String munit;
+	public Product(String name, double price, int code, String munit) {
+		super();
+		this.name = name;
+		this.price = price;
+		this.code = code;
+		this.munit = munit;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public int getCode() {
+		return code;
+	}
+	public void setCode(int code) {
+		this.code = code;
+	}
+	public String getMunit() {
+		return munit;
+	}
+	public void setMunit(String munit) {
+		this.munit = munit;
+	}
+	public String toString() {
+		return code + ":" + name + ":" + price +":" + munit +":";
+	}
+	@Override
+	public int compareTo(Product pr) {
+		return this.name.compareToIgnoreCase(pr.name);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		Product pr = (Product) obj;
+		if(this.code == pr.code)
+			return true;
+		return false;
+	}
+
+
+
+}

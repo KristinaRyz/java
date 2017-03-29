@@ -35,7 +35,6 @@
 <fullyQualifiedTypeName name="Bus"/>
 <fullyQualifiedTypeName name="Car"/>
 <fullyQualifiedTypeName name="Garage"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="Student"/>
 <fullyQualifiedTypeName name="Subject"/>
@@ -51,4 +50,9 @@
 <fullyQualifiedTypeName name="inputoutput.testcar.Car"/>
 <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
 <fullyQualifiedTypeName name="java.lang.ClassCastException"/>
+<fullyQualifiedTypeName name="myminimarket.product.Product"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="myminimarket.minimarket.Minimarket"/>
+<fullyQualifiedTypeName name="myminimarket.product.MilkProduct"/>
+<fullyQualifiedTypeName name="myminimarket.product.AlcoholProduct"/>
 </qualifiedTypeNameHistroy>

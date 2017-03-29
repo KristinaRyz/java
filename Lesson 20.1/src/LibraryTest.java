@@ -19,7 +19,9 @@ public class LibraryTest {
 			lib.addBook(bk3);
 			lib.addBook(bk5);
 			lib.addBook(bk7);
+			
 			lib.display();
+			
 			System.out.println();
 			System.out.println("------remove book---------");
 			lib.removeBook("tolstoy", "buratino");

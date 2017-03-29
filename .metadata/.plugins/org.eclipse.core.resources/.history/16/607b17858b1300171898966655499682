@@ -1,0 +1,24 @@
+package com.telran.myminimarket.product;
+
+public class MilkProduct extends Food {
+private double fat;
+
+public MilkProduct(String name, double price, int code, String munit, String expDate, boolean isKosher, double fat) {
+	super(name, price, code, munit, expDate, isKosher);
+	this.fat = fat;
+}
+
+public double getFat() {
+	return fat;
+}
+
+public void setFat(double fat) {
+	this.fat = fat;
+}
+
+@Override
+public String toString() {
+	return super.toString() + fat;
+}
+
+}
